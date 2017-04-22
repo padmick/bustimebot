@@ -90,12 +90,12 @@ app.post('/webhook/', function (req, res) {
                 } 
                 else { 
                         console.log("Non bus stop number received, requested bus stop number.");        //If NaN
-                        sendTextMessage(senderID, "Hi welcome to the Irish BusBot. To begin please enter your BusStop ID number. This can be found at the bus top itself (usually a 6 digit number like  555411) or on http://www.rtpi.ie/ (where this bot gets its data). Bus Eireann, Luas & Dublin bus. Please enter a valid bus stop number");            //If we receive just a string with no number this should occur
+                        sendTextMessage(senderID, "Hi welcome to the Irish BusBot. To begin please enter your BusStop ID number. This can be found at the bus top itself (usually a 6 digit number like  555411) or on http://www.rtpi.ie/ (where this bot gets its data). Bus Eireann, Luas & Dublin bustimes are currently advailable. Please enter a valid bus stop number");            //If we receive just a string with no number this should occur
                 }
         }
         else {
                 console.log("Non bus stop number received, requested bus stop number.");        //If no text is sent but instead a gif or other attachment
-                sendTextMessage(senderID, "Hi welcome to the Irish BusBot. To begin please enter your BusStop ID number. This can be found at the bus top itself (usually a 6 digit number like  555411) or on http://www.rtpi.ie/ (where this bot gets its data). Bus Eireann, Luas & Dublin bus. Please enter a valid bus stop number");
+                sendTextMessage(senderID, "Hi welcome to the Irish BusBot. To begin please enter your BusStop ID number. This can be found at the bus top itself (usually a 6 digit number like  555411) or on http://www.rtpi.ie/ (where this bot gets its data). Bus Eireann, Luas & Dublin bus times are currently advailable. Please enter a valid bus stop number.");
         }                
 }
 
