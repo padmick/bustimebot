@@ -1,0 +1,26 @@
+{
+  "name": "OnTime",
+  "version": "0.5.0",
+  "description": "Bus Stop Messenger Bot App",
+  "main": "index.js",
+  "scripts": {
+    "test": "Testing bot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "add late"
+  },
+  "keywords": [
+    "BusStop",
+    "Facebook",
+    "Messenger",
+    "Bot"
+  ],
+  "author": "some guy",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "request": "^2.78.0" 
+  }
+}
