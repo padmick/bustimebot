@@ -153,7 +153,7 @@ function sendBusStopInfo(stopNum,senderID) {
                         if(jbody.errorcode != 0) {
                                 console.log(jbody.errorcode);
                                 console.log(jbody.errormessage);
-                                sendTextMessage(senderID,  jbody.errormessage + " (Please note buses cease operation at 00:00 and begin at 05:00)  ");
+                                sendTextMessage(senderID,  jbody.errormessage + " (Please enter a valid bus stop number. Please note buses cease operation at 00:00 and begin at 05:00. Type help for more info)  ");
                         }
                         else {
                                 var busRoutes = new Array(jbody.results.length);
