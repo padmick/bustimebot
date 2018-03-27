@@ -161,7 +161,7 @@ function sendBusStopInfo(stopNum,senderID) {
                                 for(var i = 0; i < jbody.results.length; i++) {
                                         if(busRoutes.indexOf(jbody.results[i].route) === -1) {          //If the bus route does not exist already in the bus array
                                                 if(jbody.results[i].duetime > 1) {
-                                                        sendTextMessage(senderID, "A " + jbody.results[i].route + " bus will arrive at " + jbody.results[i].duetime + " minutes!");
+                                                        sendTextMessage(senderID, "A " + jbody.results[i].route + " bus will arrive in " + jbody.results[i].duetime + " minutes!");
                                                 }
                                                 else if(jbody.results[i].duetime === 'Due') {
                                                         sendTextMessage(senderID, "A " + jbody.results[i].route + " bus is arriving now!");
